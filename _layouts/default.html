@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
 
 {% seo %}
 
@@ -20,9 +21,9 @@
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
           
-          &nbsp;&nbsp;<a href="https://ifmo.academia.edu/ValentynSichkar" target="_blank>Academia.edu</a>
-          &nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCHlzRR0y54SLbcHwLzrUcfw" target="_blank">YouTube</a>
-          &nbsp;&nbsp;<a href="/Reinforcement_Learning_in_Python/images/Resume.pdf" target="_blank">Resume</a> 
+          &nbsp;&nbsp;&nbsp;<a href="https://ifmo.academia.edu/ValentynSichkar" target="_blank>Academia.edu</a>
+          &nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCHlzRR0y54SLbcHwLzrUcfw" target="_blank">YouTube</a>
+          &nbsp;&nbsp;&nbsp;<a href="/Reinforcement_Learning_in_Python/images/Resume.pdf" target="_blank">Resume</a> 
         </header>
     </div>
 
@@ -36,22 +37,12 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        
+        <p class="copyright">"Reinforcement Learning in Python" maintained by <a href="https://github.com/sichkar-valentyn">Valentyn Sichkar</a></p>
+                
       </footer>
     </div>
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+
   </body>
 </html>
